@@ -18,7 +18,7 @@ async Task RunAgentConversation()
     PersistentThreadMessage messageResponse = agentsClient.Messages.CreateMessage(
         thread.Id,
         MessageRole.User,
-        "Hello Agent");
+        "what leases expiring in sep 2025?");
 
     ThreadRun run = agentsClient.Runs.CreateRun(
         thread.Id,
